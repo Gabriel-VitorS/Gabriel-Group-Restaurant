@@ -1,0 +1,365 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	min-width: 375px;
+}
+
+body {
+	background-color: white;
+}
+
+header {
+	display: flex;
+	background: #151515;
+	height: 100px;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+/*---------- ICONE ----------*/
+
+#logo {
+	position: absolute;
+	top: 0;
+	right: 100px;
+	transition: right 0.4s;
+}
+
+#logo img{
+	margin-top: 15px;
+	width: 70px;
+	height: 70px;
+}
+
+/*---------- MENU ----------*/
+
+#fecha-menu {
+	display: inline-block;
+	text-align: right;
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+
+#fecha-menu p {
+	display: none;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+#menu {
+	transition: all 0.4s;
+	color: white;
+	padding-top: 35px;
+	padding-left: 100px;
+
+}
+
+#menu ul {
+	list-style: none;
+
+}
+
+#menu ul li {
+	transition: width 0.4s;
+	text-align: center;
+	float: left;
+	padding: 0px 5px;
+}
+
+#menu ul li:hover{
+	background-color: #252525;
+}
+
+/*---------- MENU LINKS ----------*/
+#menu a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+	transition: transform 0.3s;
+}
+
+#menu a:hover{
+	transform: scale(1.05);
+	transition: transform 0.3s;
+}
+
+
+/*---------- ICONE MENU ----------*/
+
+
+#icon-menu {
+	position: absolute;
+	top: 25px;
+	left: -155px;
+	transition: left 0.4s;
+}
+
+
+#icon-menu p {
+	color: white;
+	font-size: 35px;
+	padding: 0px 10px 5px 10px;
+	background-color: #555273;
+	cursor: pointer;
+	
+}
+
+/*---------- BANNER ----------*/
+
+#banner{
+	display: flex;
+	width: 100%;
+	background-color: #555273;
+
+}
+
+#img-banner {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+#img-banner img {
+	max-width: 1320px;
+	width: 100%;
+	height: auto;
+}
+
+/*---------- CARDAPIO ----------*/
+
+
+#cardapio {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+		
+}
+
+.pratos {
+	margin-top: 50px;
+	padding-bottom: 50px;
+	max-width: 1150px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/*---------- TITULOS ----------*/
+
+.titulo-principal {
+	width: 300px;
+	padding-top: 110px;
+	text-align: center;
+}
+
+.titulo-principal p{
+	font-size: 30px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #555273;
+	cursor: context-menu;
+}
+
+/*---------- BOX ----------*/
+
+
+.box{
+	width: 350px;
+	height: 400px;
+	margin: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(85,82,115,05);
+	transition: transform 0.5s;
+	cursor: pointer;
+	z-index: 10;
+
+}
+
+.box:hover{
+	transform: scale(1.02);
+	transition: transform 0.5s;
+}
+
+
+
+.imagem-box{
+	width: 100%;
+	height: 300px;
+	box-sizing: border-box;
+
+}
+
+.imagem-box img{
+
+}
+
+
+.titulo-box{
+	width: 100%;
+	height: 100px;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #555273;
+	color: white;
+	z-index: 1000;
+
+}
+
+.titulo-box p {
+	line-height: 1.5em;
+}
+
+/*---------- HISTÓRIA ----------*/
+
+#historia {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+		
+}
+
+.texto-principal {
+	max-width: 1100px;
+	margin-top: 50px;
+	
+}
+
+.texto-principal p {
+	margin: 5px;
+}
+
+/*---------- LOCALIZAÇÃO ----------*/
+
+#localizacao {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;	
+}
+
+/*---------- RODAPÉ ----------*/
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: #151515;
+}
+
+/*---------- MEIDA ----------*/
+
+@media (max-width: 768px){
+
+	/*---------- BANNER ----------*/
+	#banner{
+		height: 150px;
+	}
+	#img-banner img{
+		margin-top: 18px;
+	}
+
+}
+
+@media(max-width: 1024px){
+
+	/*---------- ICONE LOGO ----------*/
+
+	#logo {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		transition: right 0.4s;
+	}
+	
+
+	#logo img{
+		margin-top: 20px;
+		width: 60px;
+		height: 60px;
+	}
+
+	/*---------- ICONE MENU ----------*/
+
+	#fecha-menu p{
+		display: block;
+		transition: transform 0.8s;
+	}
+
+	#fecha-menu p:hover{
+		transform: scale(1.05);
+		transition: transform 0.8s;
+	}
+
+	#icon-menu {
+		position: absolute;
+		top: 25px;
+		left: 15px;
+		transition: left 0.4s;
+	}
+
+	/*---------- MENU ----------*/
+
+	#menu {
+		position: absolute;
+		top: 0px;
+		left: -800px;
+		background-color: #555273;
+		width: 70%;
+		height: 200vh;
+		padding-top: 50px;
+		padding-left: 0;
+	}
+
+	#menu ul {
+		margin-top: 50px;
+
+	}
+
+	#menu ul li {
+		height: 50px;
+		width: 100%;
+		float: none;
+		padding: 0px 0px;
+		line-height: 50px;
+		background-color: #151515;
+		border-top: 1px solid #555273;
+		border-bottom: 1px solid #555273;
+	}
+	
+	#menu ul li:hover {
+		background-color: #252525
+	}
+
+	/*---------- MENU LINK ----------*/
+
+	#menu a {
+		display: block;
+	}
+
+	#menu a:hover {
+		background-color: transparent;
+
+	}
+	
+	.box:hover{
+		transform: none;
+	}
+
+
+}
+
+

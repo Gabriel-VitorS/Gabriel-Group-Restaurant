@@ -1,405 +1,289 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Gabriel Group Restaurante</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="icon" href="img/logo-cort.png">
+<head>
+	<title>Menu</title>
+	<meta charset="utf-8">
+
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<header > <!-- CABEÇALHO -->
+
+		<div id="icon-menu">
+			<p onclick="abre()"> &#9776;</p>
+		</div>
+
+		<div id="logo"> <!-- LOGO -->
+			<a href=""><img src="img/logo-cort.png"></a>
+		</div> <!-- FIM LOGO -->
+
+		<nav id="menu"> <!-- BARRA NEVEGAÇÃO -->
+
+			<div id="fecha-menu">
+				<p onclick="fecha()"> &#9932;</p>
+			</div>
+
+			<ul>
+				<li>
+					<a onclick="fecha()" href="#cardapio">CARDÁPIO</a>
+				</li>
+
+				<li>
+					<a onclick="fecha()" href="#historia">HISTÓRIA</a>
+				</li>
+
+				<li>
+					<a onclick="fecha()" href="#localizacao">LOCALIZAÇÃO</a>
+				</li>
+
+				<li>
+					<a onclick="fecha()" href="">CONTATO</a>
+				</li>
+			</ul>
+			
+		</nav>
 		
-	</head>
-	<body>
 
-		<div #top></div> <!-- isso é uma gambiarra -->
+	</header>  <!-- FIM CABEÇALHO -->
 
-		<div id="cabecalho"> <!-- CABEÇALHO -->
+	<main onclick="fecha()" > <!-- MAIN -->
 
-			<div id="menu-principal"> <!-- MENU PRINCIPAL -->
+		<article id="banner"> <!-- BANNER -->
+			<section id="img-banner">
+				<img src="img/banner-1.jpg">
+			</section>
+		</article> <!-- FIM BANNER -->
 
-				<nav id="menu"> <!-- MENU -->
-					<ul>
-						<li>
-							<a href="#cardapio">CARDÁPIO</a>
-							<ul>
-								<li>
-									<a href="#cardapio">CAFÉ DA MANHÃ</a>
-								</li>
-								<li>
-									<a href="#almoco">ALMOÇO</a>
-								</li>
-								<li>
-									<a href="#jantar">JANTAR</a>
-								</li>
-								<li>
-									<a href="#bebidas">BEBIDAS</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#historia">HISTÓRIA</a>
-						</li>
-						<li>
-							<a href="#localizacao">LOCALIZAÇÃO</a>
-						</li>
-						<li>
-							<a href="#contato">CONTATO</a>
-						</li>
-					</ul>
-				</nav> <!-- FIM MENU -->
+		<article id="cardapio"> <!-- CARDAPIO -->
 
-				<div id="logo">  <!-- LOGO -->
+			<div class="titulo-principal">
 
-					<a href="#top">
-						<img src="img/logo-cort.png">
-					</a>
-
-				</div>
-
-			</div> <!-- FIM MENU PRINCIPAL -->
-
-		</div> <!-- FIM CABEÇALHO -->
-
-		<div id=main>
-
-			<div id="banner">
-				<dir id="banner-img">
-					<img src="img/banner-1.jpg"> 
-				</dir>
-				
-			</div>
-
-			<!----------------------------------- CARDAPIO ----------------------------------->
-
-			<div id="cardapio"> 
-
-				<div id="cafe">
-					<div class="titulos-principal">
-						<h1>
-							CAFÉ DA MANHÃ
-						</h1>
-					</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-							
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-							
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-
-						</div>
-
-				</div>
-
-				<div class="clear"></div>
-
-				<!----------------------------------- ALMOÇO ----------------------------------->
-
-				<div id="almoco">
-					<div class="titulos-principal">
-						<h1>
-							ALMOÇO
-						</h1>
-					</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								<h1>
-								Casillero del Diablo Cabernet Sauvignon 2019
-								</h1>
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-
-						</div>
-
-				</div>
-
-				<div class="clear"></div>
-
-				<!----------------------------------- JANTAR ----------------------------------->
-
-				<div id="jantar">
-					<div class="titulos-principal">
-						<h1>
-							JANTAR
-						</h1>
-					</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								<img src="img/cardapio/jantar/teste.jpg">
-							</div>
-
-							<div class="box-titulo">
-								<h1>
-									Steak Tartare
-								</h1>
-							</div>
-
-							<div class="box-mais">
-								O steak tartare é um prato que faz sucesso ao redor do mundo todo. Aqui, a carne é combinada com alcaparras, cebola roxa, salsinha, sal, pimenta-preta, suco de limão, azeite de oliva e gema de ovo.
-							</div>
-
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-							
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-							
-						</div>
-
-						<div class="box">
-
-							<div class="box-img">
-								
-							</div>
-
-							<div class="box-titulo">
-								<h1>
-									
-								</h1>
-							</div>
-
-							<div class="box-mais">
-								
-							</div>
-							
-					</div>
-				</div>
-
-				<div class="clear"></div>
-
-				<!----------------------------------- BEBIDAS ----------------------------------->
-
-				<div id="bebidas">
-
-					<div  class="titulos-principal">
-						<h1>
-							BEBIDAS
-						</h1>
-
-					</div>
-
-					<div class="box">
-
-						<div class="box-img">
-							<img src="img/cardapio/bebidas/vinho-1.png">
-						</div>
-
-						<div class="box-titulo">
-							<h1>
-								Casillero del Diablo Cabernet Sauvignon 2019
-							</h1>
-						</div>
-
-						<div class="box-mais">
-							É a variedade mais famosa do Casillero del Diablo. Sua colheita de 2005 foi premiada por Decanter como a melhor do planeta. Dono de intensos aromas de cerejas, ameixas e toques de baunilha e tostado. Dos tintos, é o que possui mais corpo, é elegante e ideal para acompanhar carnes como um corte de rês no molho de pimenta.
-						</div>
-
-					</div>
-
-					<div class="box">
-
-						<div class="box-img">
-							<img src="img/cardapio/bebidas/vinho-2.png">
-						</div>
-						<div class="box-titulo">
-							<h1>
-								Louis M. Martini Monte Rosso Cabernet Sauvignon 2014
-							</h1>
-						</div>
-
-						<div class="box-mais">
-							Esse pontuado rótulo é produzido com uvas provenientes do nobre e lendário vinhedo de Monte Rosso, localizado em um terroir privilegiado que une elevada altitude, solos vulcânicos e um clima ideal. O baixo rendimento proporciona uvas com alta concentração e qualidade, o que justifica toda a grandiosidade desse vinho.
-						</div>
-
-					</div>
-
-					<div class="box">
-
-						<div class="box-img">
-							<img src="img/cardapio/bebidas/vinho-3.png">
-						</div>
-
-						<div class="box-titulo">
-							<h1>
-								Casas Del Toqui Reserva Semillon 2020
-							</h1>
-						</div>
-
-						<div class="box-mais">
-							Um reserva branco com boa intensidade de aromas e expressivo em boca. Sua vinificação contempla fermentação em baixas temperaturas, bâtonnage das lias finas (basicamente é mexer as leveduras que ficam no fundo do recipiente para garantir mais complexidade ao vinho) e maturação parcial em carvalho, que deixam o vinho fresco e com boa presença no paladar.
-						</div>
-
-					</div>
-
-					<div class="box">
-						
-					</div>
-
-					<div class="clear">
-						
-					</div>
-
-				</div>
+				<p>PRATOS</p>
 
 			</div>
 
-			<div id="historia">
+			<section class="pratos"> <!-- PRATOS -->
 
-				<div class="titulos-principal">
-					<h1>
-						HISTÓRIA
-					</h1>
-				</div>
-				
-			</div>
+				<div class="box">
 
-			<dir id="localizacao">
-				
-			</dir>
+					<div class="imagem-box">
+						<img src="img/cardapio/jantar/jantar-1.jpg" alt="">
+					</div>
 
-			<div id="rodape">
-				<div id="contato">
+					<div class="titulo-box">
+						<p>
+							<p>
+								Steak Tartare
+							</p>
+						</p>
+					</div>
 					
 				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							
+						</p>
+					</div>
+
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							
+						</p>
+					</div>
+					
+				</div>
+
+			</section> <!-- FIM PRATOS -->
+
+			<div class="titulo-principal">
+
+				<p>VINHOS</p>
+
 			</div>
-		</div>
-	</body>
+
+			<section class="pratos"> <!-- VINHOS -->
+
+
+
+				<div class="box">
+
+					<div class="imagem-box">
+						<img src="img/cardapio/bebidas/vinho-1.jpg">
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							Casillero del Diablo Cabernet Sauvignon 2019
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+						<img src="img/cardapio/bebidas/vinho-2.jpg">
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							Louis M. Martini Monte Rosso Cabernet Sauvignon 2014
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+						<img src="img/cardapio/bebidas/vinho-3.jpg">
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							Casas Del Toqui Reserva Semillon 2020
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							
+						</p>
+					</div>
+					
+				</div>
+				
+			</section> <!-- FIM VINHOS -->
+
+		</article> <!-- FIM CARDAPIO -->
+
+
+		<article id="historia"> <!-- HISTÓRIA -->
+
+			<div class="titulo-principal">
+				<p>HISTÓRIA</p>
+			</div>
+	
+			<section class="texto-principal">
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				</p>
+			</section>
+
+		</article> <!-- FIM HISTÓRIA -->
+
+		<article id="localizacao">
+
+			<div class="titulo-principal">
+				<p>LOCALIZAÇÃO</p>
+			</div>
+			
+
+		</article>
+
+	</main> <!-- FIM MAIN -->
+
+	<footer>
+
+	</footer>
+
+</body>
 </html>
