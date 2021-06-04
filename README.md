@@ -1,5 +1,5 @@
 # Gabriel-Group-Restaurant
-Projeto de um site de restaurante que visa desmotrar meus conhecimentos em HTML e CSS
+Projeto de um site de restaurante que visa demonstrar meus conhecimentos em HTML e CSS
 
 Beta - 1
 - Site completo
