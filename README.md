@@ -3,14 +3,16 @@ Projeto de um site de restaurante que visa demonstrar meus conhecimentos em HTML
 
 Link: https://gabriel-vitors.github.io/Gabriel-Group-Restaurant/
 
-Beta - 1
+Beta - 1.1
 - Site completo
 
-![Animação](https://user-images.githubusercontent.com/78169102/120842260-d9f29800-c542-11eb-9e2d-dd61cbd5aaf8.gif)
+![Site-completo](https://user-images.githubusercontent.com/78169102/121264824-26650d00-c88e-11eb-8aa5-af163c63f405.gif)
+
 
 - Site responsivo
 
-![Animação-responsivo](https://user-images.githubusercontent.com/78169102/120842855-b3812c80-c543-11eb-80e7-718d1f5b978c.gif)
+![Site-Mobile-min](https://user-images.githubusercontent.com/78169102/121264835-2cf38480-c88e-11eb-8020-b94ebf40a76b.gif)
+
 
 - Efeito no box
 
