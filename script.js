@@ -8,8 +8,6 @@ function abre(){
 
 }
 
-
-
 function fecha(){
     var fecha = document.getElementById('menu');
 

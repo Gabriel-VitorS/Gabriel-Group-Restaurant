@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Menu</title>
+	<title>Gabriel Group Restaurant</title>
 	<meta charset="utf-8">
 
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-
+	<link rel="icon" href="img/logo-cort.png">
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+
+	<div id="topo">
+
+	</div>
 
 	<header > <!-- CABEÇALHO -->
 
@@ -18,7 +22,7 @@
 		</div>
 
 		<div id="logo"> <!-- LOGO -->
-			<a href=""><img src="img/logo-cort.png"></a>
+			<a href="#topo"><img src="img/logo-cort.png"></a>
 		</div> <!-- FIM LOGO -->
 
 		<nav id="menu"> <!-- BARRA NEVEGAÇÃO -->
@@ -41,7 +45,7 @@
 				</li>
 
 				<li>
-					<a onclick="fecha()" href="">CONTATO</a>
+					<a onclick="fecha()" href="#footer">CONTATO</a>
 				</li>
 			</ul>
 			
@@ -56,7 +60,15 @@
 			<section id="img-banner">
 				<img src="img/banner-1.jpg">
 			</section>
-		</article> <!-- FIM BANNER -->
+		</article>
+		<article id="banner-mobile">
+			<section id="img-banner-mobile">
+				<img src="img/banner-1-mobile.bmp" width="350px" alt="">
+			</section>
+
+		</article>
+		
+		<!-- FIM BANNER -->
 
 		<article id="cardapio"> <!-- CARDAPIO -->
 
@@ -87,12 +99,12 @@
 				<div class="box">
 
 					<div class="imagem-box">
-
+						<img src="img/cardapio/jantar/jantar-2.jpg" alt="">
 					</div>
 
 					<div class="titulo-box">
 						<p>
-							
+							Espaguete com Molho à Bolonhesa
 						</p>
 					</div>
 
@@ -101,26 +113,12 @@
 				<div class="box">
 
 					<div class="imagem-box">
-
+						<img src="img/cardapio/jantar/jantar-3.jpg" alt="">
 					</div>
 
 					<div class="titulo-box">
 						<p>
-							
-						</p>
-					</div>
-					
-				</div>
-
-				<div class="box">
-
-					<div class="imagem-box">
-
-					</div>
-
-					<div class="titulo-box">
-						<p>
-							
+							Maminha Assada com Manjericão
 						</p>
 					</div>
 					
@@ -129,12 +127,12 @@
 				<div class="box">
 
 					<div class="imagem-box">
-
+						<img src="img/cardapio/jantar/jantar-4.jpg" alt="">
 					</div>
 
 					<div class="titulo-box">
 						<p>
-							
+							Macarrão Campestre
 						</p>
 					</div>
 					
@@ -143,12 +141,26 @@
 				<div class="box">
 
 					<div class="imagem-box">
-
+						<img src="img/cardapio/jantar/jantar-5.jpg" alt="">
 					</div>
 
 					<div class="titulo-box">
 						<p>
-							
+							Risoto de Alcachofra com Brie
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="box">
+
+					<div class="imagem-box">
+						<img src="img/cardapio/jantar/jantar-6.jpg" alt="">
+					</div>
+
+					<div class="titulo-box">
+						<p>
+							Quiche de Alho-Poró 
 						</p>
 					</div>
 					
@@ -211,12 +223,12 @@
 				<div class="box">
 
 					<div class="imagem-box">
-
+						<img src="img/cardapio/bebidas/vinho-4.jpg" alt="">
 					</div>
 
 					<div class="titulo-box">
 						<p>
-							
+							Champagne La Grande Dame Rosé 2004
 						</p>
 					</div>
 					
@@ -225,12 +237,12 @@
 				<div class="box">
 
 					<div class="imagem-box">
-
+						<img src="img/cardapio/bebidas/vinho-5.jpg" alt="">
 					</div>
 
 					<div class="titulo-box">
 						<p>
-							
+							Ropiteau Frères Mersault 1 Cru Les Cras Blanc 2015
 						</p>
 					</div>
 					
@@ -239,12 +251,12 @@
 				<div class="box">
 
 					<div class="imagem-box">
-
+						<img src="img/cardapio/bebidas/vinho-6.jpg" alt="">
 					</div>
 
 					<div class="titulo-box">
 						<p>
-							
+							Château Palmer 2005
 						</p>
 					</div>
 					
@@ -281,7 +293,7 @@
 
 	</main> <!-- FIM MAIN -->
 
-	<footer>
+	<footer id="footer">
 
 	</footer>
 
