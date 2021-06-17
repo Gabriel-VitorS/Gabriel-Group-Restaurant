@@ -11,14 +11,12 @@
 </head>
 <body>
 
-	<div id="topo">
-
-	</div>
+	<div id="topo"></div>
 
 	<header > <!-- CABEÇALHO -->
 
 		<div id="icon-menu">
-			<p onclick="abre()"> &#9776;</p>
+			<p onclick="abreMenu()"> &#9776;</p>
 		</div>
 
 		<div id="logo"> <!-- LOGO -->
@@ -28,24 +26,24 @@
 		<nav id="menu"> <!-- BARRA NEVEGAÇÃO -->
 
 			<div id="fecha-menu">
-				<p onclick="fecha()"> &#9932;</p>
+				<p onclick="fechaMenu()"> &#9932;</p>
 			</div>
 
 			<ul>
 				<li>
-					<a onclick="fecha()" href="#cardapio">CARDÁPIO</a>
+					<a onclick="fechaMenu()" href="#cardapio">CARDÁPIO</a>
 				</li>
 
 				<li>
-					<a onclick="fecha()" href="#historia">HISTÓRIA</a>
+					<a onclick="fechaMenu()" href="#historia">HISTÓRIA</a>
 				</li>
 
 				<li>
-					<a onclick="fecha()" href="#localizacao">LOCALIZAÇÃO</a>
+					<a onclick="fechaMenu()" href="#localizacao">LOCALIZAÇÃO</a>
 				</li>
 
 				<li>
-					<a onclick="fecha()" href="#footer">CONTATO</a>
+					<a onclick="fechaMenu()" href="#footer">CONTATO</a>
 				</li>
 			</ul>
 			
@@ -54,23 +52,41 @@
 
 	</header>  <!-- FIM CABEÇALHO -->
 
-	<main onclick="fecha()" > <!-- MAIN -->
+	<main onclick="fechaMenu()" > <!-- MAIN -->
 
-		<article id="banner"> <!-- BANNER -->
-			<section id="img-banner">
-				<img src="img/banner-1.jpg">
-			</section>
-		</article>
+		<!-- BANNER -->
+		<div id="banner-fundo"> <!-- BANNER DESKTOP -->
 
-		<article id="banner-mobile">
-			<section id="img-banner-mobile">
-				<img src="img/banner-mobile-modelo.jpg" width="350px" alt="">
-			</section>
-		</article>
+			<div id="banners">
+
+				<div id="banner-img1"> <!-- BANNER IMAGENS DESKTOP -->
+					<img id="img1" src="img/banner-1.jpg">
+					<img id="img1-mobile" src="img/banner-mobile-1.jpg" alt="">
+
+				</div>
+				
+				<div id="banner-img2">
+					<img id="img2" src="img/banner-2.jpg" alt="">
+					<img id="img2-mobile" src="img/banner-mobile-2.jpg" alt="">
+				</div>
+
+
+			</div>
+
+			<div id="input-banner"> <!-- BANNER INPUT DESKTOP -->
+				<input onclick="botaoBanner('botao1')" name="banner" class="botao-banner" id="botao1-banner" type="radio">
+				<input onclick="botaoBanner('botao2')" name="banner" class="botao-banner" id="botao2-banner" type="radio">
+			</div>
+
+			<div id="label-banner"> <!-- BANNER LABEL DESKTOP -->
+				<label for="botao1-banner" class="label-banner" id="label1-banner"></label>
+				<label for="botao2-banner" class="label-banner" id="label2-banner"></label>
+			</div>
+		</div>
 		
 		<!-- FIM BANNER -->
 
-		<article id="cardapio"> <!-- CARDAPIO -->
+		<article id="cardapio" > <!-- CARDAPIO -->
 
 			<div class="titulo-principal">
 
@@ -88,9 +104,7 @@
 
 					<div class="titulo-box">
 						<p>
-							<p>
-								Steak Tartare
-							</p>
+							Steak Tartare
 						</p>
 					</div>
 					
@@ -288,13 +302,39 @@
 				<p>LOCALIZAÇÃO</p>
 			</div>
 			
+			<div id="mapa">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415.25896629631643!2d-34.91531915005839!3d-8.03689106360321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1907a5043f35%3A0x236794fc1e27e222!2sR.%20Laurindo%20Coelho%2C%20100%20-%20Casa%20Forte%2C%20Recife%20-%20PE%2C%2052060-340!5e0!3m2!1spt-BR!2sbr!4v1623796004208!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+
+			<div id="rua">
+				<p>R. Laurindo Coelho, 100</p>
+				<p>Casa Forte</p>
+				<p>Próximo ao Plaza</p>
+			</div>
 
 		</article>
 
 	</main> <!-- FIM MAIN -->
 
 	<footer id="footer">
-
+		<div id="imagens-rodape">
+			 <a href="https://github.com/Gabriel-VitorS">
+				 <img src="img/rodape/github.png" alt="">
+			 </a>
+			 <a href="https://www.linkedin.com/in/gabriel-vitorS">
+				 <img src="img/rodape/linkedin.png" alt="">
+			 </a>
+		</div>
+		<div>
+			<p>
+				GABRIELVITORDASILVA@GMAIL.COM
+			</p>
+			<p>
+				GABRIEL GROUP RESTAURANT
+			</p>
+			<p style="font-size: 14px;">
+				obs: endereço fictício
+			</p>
 	</footer>
 
 </body>

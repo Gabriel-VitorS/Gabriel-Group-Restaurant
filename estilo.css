@@ -2,28 +2,37 @@
 	margin: 0;
 	padding: 0;
 	font-size: 20px;
-	font-family: sans-serif;
+	font-family: robotoLitgh;
 }
+
+@font-face {
+	font-family: robotoLitgh;
+	src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: robotoRegular;
+	src: url(fonts/Roboto-Regular.ttf);
+}
+
 
 html {
 	scroll-behavior: smooth;
-	min-width: 370px;
+	min-width: 320px;
 }
 
 body {
 	background-color: white;
 }
 
-
-
 /*---------- SCROLL-BAR ----------*/
 ::-webkit-scrollbar {
-	width: 2px;
+	width: 10px;
 	background-color: #151515;
 }
 
 ::-webkit-scrollbar-thumb{
-	background-color: white;
+	background-color: #c4c0f0;
 }
 
 header {
@@ -93,6 +102,8 @@ header {
 
 /*---------- MENU LINKS ----------*/
 #menu a {
+	font-family: robotoLitgh;
+	font-size: 22px;
 	display: block;
 	padding: 5px;
 	text-decoration: none;
@@ -101,8 +112,8 @@ header {
 }
 
 #menu a:hover{
-	transform: scale(1.05);
-	transition: transform 0.3s;
+	transform: scale(1);
+	transition: transform 0.8s;
 }
 
 
@@ -128,23 +139,97 @@ header {
 
 /*---------- BANNER ----------*/
 
-#banner{
+#banner-fundo{
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	width: 100%;
 	background-color: #555273;
+	position: sticky;
+	top: 100px;
 
 }
 
-#img-banner {
-	width: 1320px;
-	margin: 0 auto;
+#banners{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	
 }
 
-#img-banner img {
+#banner-img1{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	transition: margin-left 0.5s;
+}
+
+#banner-img2{
+	position: fixed;
+	top: 100px;
+	right: -100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	transition: right 0.5s;
+}
+
+#img1{
 	max-width: 1320px;
 	width: 100%;
-	height: auto;
 }
+#img2{
+	max-width: 1320px;
+	width: 100%;
+}
+
+#img1-mobile{
+	display: none;
+}
+
+#img2-mobile{
+	display: none;
+}
+
+/*---------- BANNER BOTÃO ----------*/
+
+#input-banner{
+	display: none;
+}
+
+#label-banner{
+
+	display: flex;
+	justify-content: center;
+	background-color: #555273;
+}
+
+#label-banner label{
+	transition: width 0.5s;
+	opacity: 0.5;
+}
+
+.label-banner{
+	border-radius: 10px;
+	margin: 0px 10px 5px 10px;
+	padding: 3px;
+	background-color: white;
+	cursor: pointer;
+}
+
+#label1-banner{
+	width: 300px;
+	background-color: #151515;
+}
+#label2-banner{
+	width: 150px;
+	background-color: white;
+}
+
+
 /*---------- BANNER MOBILE ----------*/
 
 #banner-mobile{
@@ -157,12 +242,11 @@ header {
 #cardapio {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
+	background-color: #f0f0fa;
+	position: relative;
 	z-index: 1;
-		
 }
 
 .pratos {
@@ -186,18 +270,24 @@ header {
 
 .titulo-principal p{
 	font-size: 30px;
-	padding-bottom: 10px;
-	border-bottom: 2px solid #555273;
+	color: white;
 	cursor: context-menu;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 3.5px;
+	background-color: #555273;
 }
 
 /*---------- BOX ----------*/
 
 
 .box{
-	width: 350px;
-	height: 400px;
+	position: relative;
+	max-width: 350px;
+	max-height: 400px;
 	margin: 10px;
+	display: flex;
+	flex-direction: column;
 	border-radius: 7px;
 	box-shadow: 0px 0px 10px 0px rgba(85,82,115,05);
 	transition: transform 0.5s;
@@ -207,7 +297,7 @@ header {
 }
 
 .box:hover{
-	transform: scale(1.02);
+	transform: scale(1.01);
 	transition: transform 0.5s;
 }
 
@@ -215,7 +305,6 @@ header {
 	width: 100%;
 	height: 300px;
 	box-sizing: border-box;
-	
 
 }
 
@@ -238,8 +327,12 @@ header {
 }
 
 .titulo-box p {
-	line-height: 1.5em;
-	
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: robotoRegular;
 }
 
 /*---------- HISTÓRIA ----------*/
@@ -250,7 +343,8 @@ header {
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
+	position: relative;
+	background-color: #f0f0fa;
 		
 }
 
@@ -261,7 +355,7 @@ header {
 }
 
 .texto-principal p {
-	margin: 5px;
+	margin: 10px;
 }
 
 /*---------- LOCALIZAÇÃO ----------*/
@@ -272,50 +366,84 @@ header {
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	background-color: white;	
+	position: relative;
+	background-color: #f0f0fa;	
+}
+
+#mapa {
+	margin-top: 50px;
+	max-width: 1100px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+#mapa iframe{
+	width: 80%;
+	height: 450px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(85,82,115,05);
+}
+
+#rua{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #555273;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
 }
 
 /*---------- RODAPÉ ----------*/
 
 footer{
 	width: 100%;
-	height: 100px;
 	background-color: #151515;
+	position: relative;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+footer p{
+	color: white;
+	margin-bottom: 10px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#imagens-rodape{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+#imagens-rodape a{
+	color: none;
+	background-color: none;
+	border: none;
+	margin: 15px;
+	height: 15px;
+}
+
+#imagens-rodape a:visited{
+	color: #151515;
+}
+
+#imagens-rodape img{
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 0px 20px;
+	width: 40px;
 }
 
 /*---------- MEIDA ----------*/
 
-
-
-@media (max-width: 768px){
-
-	/*---------- BANNER ----------*/
-	#banner{
-		height: 150px;
-	}
-	#img-banner img{
-		margin-top: 18px;
-	}
-
-}
-
-@media (max-width: 732px){
-	#banner{
-		display: none;
-	}
-
-	#banner-mobile{
-		display: flex;
-		justify-content: center;
-		min-height: 700px;
-		height: calc(100vh - 100px);
-		background-color: #555273;
-		position: sticky;
-		top: 100px;
-		z-index: -1;
-	}
-
-}
 
 @media(max-width: 1024px){
 
@@ -380,8 +508,6 @@ footer{
 		padding: 0px 0px;
 		line-height: 50px;
 		background-color: #151515;
-		/*border-top: 0.5px solid white;
-		border-bottom: 0.5px solid white;*/
 	}
 	
 	#menu ul li:hover {
@@ -398,12 +524,116 @@ footer{
 		background-color: transparent;
 
 	}
-	
 	.box:hover{
 		transform: none;
 	}
+}
 
+@media (max-width: 768px){
+
+	/*---------- BANNER ----------*/
+
+	#img-banner img{
+		margin-top: 18px;
+	}
 
 }
 
+@media (max-width: 732px){
+	#img1{
+		display: none;
+	}
+	#img2 {
+		display: none;
+	}
 
+
+	/*---------- BANNER MOBILE ----------*/
+	#banner-fundo{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		min-height: 700px;
+		height: calc(100vh - 100px);
+		background-color: #555273;
+		position: sticky;
+		top: 100px;
+		z-index: 0;
+	}
+
+	#banners{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		
+	}
+
+
+	#grupo-img-banner-mobile img {
+		max-width: 350px;
+		width: 100%;
+	}
+
+	#banner-img1{
+		width: 100%;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+		transition: all 0.5s;
+		
+	}
+
+	#banner-img2{
+		position: fixed;
+		top: 100px;
+		right: -100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 100%;
+		transition: all 0.5s;
+		
+	}
+	#img1-mobile {
+		max-width: 350px;
+		width: 100%;
+		display: block;	
+	}
+	#img2-mobile {
+		max-width: 350px;
+		width: 100%;
+		display: block;	
+	}
+	
+	
+	/*---------- BANNER BOTÃO MOBILE  ----------*/
+
+	#label-banner {
+		position: fixed;
+		top: 95%;
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 375px) {
+
+
+	.box{
+		width: 280px;
+		height: 320px;
+	}
+
+	.imagem-box img{
+		width: 100%;
+	}
+	
+	.pratos{
+		width: 100%;
+	}
+}
