@@ -1,5 +1,5 @@
 # Gabriel-Group-Restaurant
-Projeto de um site de restaurante que visa demonstrar meus conhecimentos em HTML e CSS
+Projeto de um site de restaurante que visa demonstrar meus conhecimentos em HTML, CSS e um pouco de JS
 
 Link: https://gabriel-vitors.github.io/Gabriel-Group-Restaurant/
 
